@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна Робота №5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Лабораторна Робота №5</h1>
+
+    <!-- Завдання 1: Форма -->
+    <section>
+      <h2>Форма для заповнення</h2>
+      <form id="myForm">
+        <label for="pib">ПІБ:</label>
+        <input type="text" id="pib" name="pib" placeholder="ТТТТТТ Т.Т." />
+        <div id="pibError" class="error"></div>
+
+        <label for="dob">Дата народження:</label>
+        <input type="text" id="dob" name="dob" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" />
+        <div id="dobError" class="error"></div>
+
+        <label for="address">Адреса:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="м. ТТТТТТ"
+        />
+        <div id="addressError" class="error"></div>
+
+        <label for="email">e-mail:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+        />
+        <div id="emailError" class="error"></div>
+
+        <label for="telegram">Telegram:</label>
+        <input
+          type="text"
+          id="telegram"
+          name="telegram"
+          placeholder="@example"
+        />
+        <div id="telegramError" class="error"></div>
+
+        <button type="button" onclick="validateForm()">Підтвердити</button>
+      </form>
+    </section>
+
+    <!-- Завдання 2: Таблиця 6x6 -->
+    <section>
+      <h2>Таблиця 6x6</h2>
+      <p>
+        Наведіть на клітинку з цифрою 6 для випадкової зміни кольору, click для
+        вибору кольору з палітри, double-click для зміни кольору прямокутника,
+        утвореного, починаючи з вибраної комірки таблиці
+      </p>
+
+      <table id="myTable"></table>
+
+      <label for="colorPicker"
+        >Для вибору кольору з палітри натисніть сюди:</label
+      >
+      <input type="color" id="colorPicker" />
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
